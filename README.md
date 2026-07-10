@@ -153,7 +153,7 @@ During this project, I practiced:
 Clone the repository:
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_LINK
+git clone https://github.com/pradeepk1787/react-portfolio.git
 ```
 
 Navigate to the project:
