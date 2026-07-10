@@ -1,0 +1,90 @@
+/* ======================
+   Not Found Page
+====================== */
+
+.not-found {
+  background: #0f172a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 6rem 2rem;
+
+  min-height: 70vh;
+}
+
+.not-found-container {
+  width: 100%;
+  max-width: 700px;
+
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: clamp(5rem, 10vw, 8rem);
+
+  color: #60a5fa;
+
+  margin-bottom: 1rem;
+
+  line-height: 1;
+}
+
+.not-found h2 {
+  color: #f8fafc;
+
+  margin-bottom: 1rem;
+
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.not-found p {
+  color: #94a3b8;
+
+  max-width: 500px;
+
+  margin: 0 auto 2.5rem;
+
+  line-height: 1.8;
+}
+
+.not-found-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ======================
+     Responsive
+  ====================== */
+
+@media (max-width: 768px) {
+  .not-found h1 {
+    font-size: 5.5rem;
+  }
+
+  .not-found h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .not-found {
+    padding: 4rem 1.5rem;
+  }
+
+  .not-found h1 {
+    font-size: 4.5rem;
+  }
+
+  .not-found h2 {
+    font-size: 1.5rem;
+  }
+
+  .not-found-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

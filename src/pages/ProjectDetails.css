@@ -1,0 +1,240 @@
+/* ======================
+   Outer Layout
+====================== */
+
+.project-details {
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: white;
+  padding: 6rem 8%;
+}
+
+.project-details-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ======================
+   Hero
+====================== */
+.project-hero {
+  margin-bottom: 7rem;
+}
+
+.back-link {
+  display: inline-block;
+
+  margin-bottom: 2rem;
+
+  color: #60a5fa;
+
+  text-decoration: none;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  color: #93c5fd;
+}
+
+.project-hero .project-status {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-hero h1 {
+  font-size: 3rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.project-description {
+  max-width: 900px;
+
+  color: #94a3b8;
+
+  line-height: 1.8;
+
+  margin-bottom: 2rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+
+  flex-wrap: wrap;
+}
+
+/* ======================
+   Sections
+====================== */
+
+.project-section + .project-section {
+  margin-top: 6rem;
+}
+
+.project-section h2 {
+  margin-bottom: 0.5rem;
+  color: #60a5fa;
+  font-size: 2rem;
+}
+
+.project-section p {
+  max-width: 700px;
+  margin-bottom: 2rem;
+  color: #94a3b8;
+}
+
+/* ======================
+   Highlights
+====================== */
+
+.highlights-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+
+  gap: 1.5rem;
+}
+
+.highlight-card {
+  background: #1e293b;
+  color: #cbd5e1;
+  padding: 1.5rem;
+
+  display: flex;
+  align-items: flex-start;
+  min-height: 120px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ======================
+   Feature Cards
+====================== */
+
+.feature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 1rem;
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  min-height: 80px;
+
+  padding: 1rem 1.25rem;
+
+  background: #1e293b;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+
+  transition: .3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(96,165,250,.35);
+}
+
+.feature-icon {
+  color: #22c55e;
+  font-weight: 700;
+  font-size: 1rem;
+
+  flex-shrink: 0;
+}
+
+.feature-card span:last-child {
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+.tech-stack {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.75rem;
+}
+
+.tech-badge {
+  padding: 0.35rem 0.8rem;
+
+  background: rgba(96, 165, 250, 0.12);
+
+  color: #93c5fd;
+
+  border: 1px solid rgba(96, 165, 250, 0.25);
+
+  border-radius: 999px;
+
+  font-size: 0.8rem;
+
+  font-weight: 500;
+}
+
+/* ======================
+   Footer
+====================== */
+
+.project-footer {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 5rem;
+
+  padding: 4rem 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ======================
+   BreakPoints
+====================== */
+@media (max-width: 768px) {
+  .project-hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .project-section h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-details {
+    padding: 4rem 1.5rem;
+  }
+
+  .project-hero h1 {
+    font-size: 2rem;
+  }
+
+  .highlight-card {
+    padding: 1.25rem;
+  }
+}

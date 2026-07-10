@@ -1,0 +1,97 @@
+.projects {
+  background: #0f172a;
+
+  color: white;
+
+  min-height: 100vh;
+
+  padding: 6rem 8%;
+}
+
+.projects-container {
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+/* =====================
+   Header
+===================== */
+
+.projects-header {
+  text-align: center;
+
+  margin-bottom: 5rem;
+}
+
+.projects-header h1 {
+  font-size: 3rem;
+
+  margin-bottom: 1rem;
+}
+
+.projects-header p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: #94a3b8;
+
+  line-height: 1.8;
+}
+
+/* =====================
+   Sections
+===================== */
+
+.projects-section {
+  margin-bottom: 5rem;
+}
+
+.projects-section h2 {
+  margin-bottom: 1rem;
+
+  color: #60a5fa;
+}
+
+.section-description {
+  color: #94a3b8;
+
+  line-height: 1.8;
+
+  margin-bottom: 2rem;
+}
+
+/* =====================
+   Grid
+===================== */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  gap: 2rem;
+}
+
+/* =====================
+   Responsive
+===================== */
+
+@media (max-width: 992px) {
+  .projects-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects {
+    padding: 4rem 1.5rem;
+  }
+
+  .projects-header h1 {
+    font-size: 2rem;
+  }
+}
