@@ -3,6 +3,7 @@ import { projects } from "../data/projects";
 
 import "./ProjectDetails.css";
 import { statusLabels } from "../utils/projectStatus";
+import NotFound from "./NotFound";
 
 function ProjectDetails() {
   const { projectId } = useParams();
@@ -11,20 +12,7 @@ function ProjectDetails() {
 
   if (!project) {
     return (
-      <section className="project-details">
-        <div className="project-details-container">
-          <h1>Project Not Found</h1>
-
-          <p>
-            The project you're looking for doesn't exist or may have been
-            removed.
-          </p>
-
-          <Link className="back-link" to="/projects">
-            ← Back to Projects
-          </Link>
-        </div>
-      </section>
+        <NotFound />
     );
   }
 

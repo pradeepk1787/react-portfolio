@@ -101,7 +101,7 @@ export const projects = [
     description:
       "A professional portfolio application built with React and React Router, showcasing modern frontend development practices, reusable components, and dynamic routing architecture.",
 
-    status: "in-progress",
+    status: "completed",
 
     featured: true,
 
@@ -135,7 +135,7 @@ export const projects = [
       "Automated testing",
     ],
 
-    github: "YOUR_GITHUB_URL",
-    demo: "YOUR_VERCEL_URL",
+    github: "https://github.com/pradeepk1787/react-portfolio",
+    demo: " https://react-portfolio-eight-beta-69.vercel.app/",
   },
 ];

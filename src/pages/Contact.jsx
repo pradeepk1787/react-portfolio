@@ -61,11 +61,11 @@ function Contact() {
             </p>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/pradeep-1787pk"
               target="_blank"
               rel="noreferrer"
             >
-              Coming Soon
+              linkedin.com/in/pradeep-1787pk
             </a>
           </div>
         </div>

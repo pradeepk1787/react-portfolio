@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Home.css";
 import profileImage from "../assets/images/profile.png";
 
@@ -23,13 +24,13 @@ function Home() {
           </p>
 
           <div className="hero-buttons">
-            <a href="/projects" className="btn btn-primary">
+            <Link to="/projects" className="btn btn-primary">
               View Projects
-            </a>
+            </Link>
 
-            <a href="/contact" className="btn btn-secondary">
+            <Link to="/contact" className="btn btn-secondary">
               Contact Me
-            </a>
+            </Link>
           </div>
 
           <div className="social-links">
