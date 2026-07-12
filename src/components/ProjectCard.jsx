@@ -3,34 +3,35 @@ import "./ProjectCard.css";
 import { statusLabels } from "../utils/projectStatus";
 
 function ProjectCard({ project }) {
+  
+  
+  const isCurrentPortfolio = project.id === "portfolio-router"
+
   return (
     <div className="project-card">
-
       <div className="project-header">
-        <h3>{project.title}</h3>
+        <h3 className="project-title">
+          {project.title}
+
+          {isCurrentPortfolio && <span className="current-badge">Current</span>}
+        </h3>
 
         <span className={`project-status ${project.status}`}>
           {statusLabels[project.status]}
         </span>
       </div>
 
-      <p className="project-description">
-        {project.description}
-      </p>
+      <p className="project-description">{project.description}</p>
 
       <div className="project-tech">
         {project.tech.map((tech) => (
-          <span
-            key={tech}
-            className="tech-badge"
-          >
+          <span key={tech} className="tech-badge">
             {tech}
           </span>
         ))}
       </div>
 
       <div className="project-actions">
-
         <a
           className="btn-primary"
           href={project.demo}
@@ -49,15 +50,10 @@ function ProjectCard({ project }) {
           GitHub
         </a>
 
-        <Link
-          className="details-link"
-          to={`/projects/${project.id}`}
-        >
+        <Link className="details-link" to={`/projects/${project.id}`}>
           Details →
         </Link>
-
       </div>
-
     </div>
   );
 }

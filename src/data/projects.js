@@ -96,7 +96,7 @@ export const projects = [
   {
     id: "portfolio-router",
 
-    title: "React Portfolio Router",
+    title: "Portfolio Website",
 
     description:
       "A professional portfolio application built with React and React Router, showcasing modern frontend development practices, reusable components, and dynamic routing architecture.",
