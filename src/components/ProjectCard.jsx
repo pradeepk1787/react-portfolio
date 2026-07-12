@@ -51,7 +51,7 @@ function ProjectCard({ project }) {
         </a>
 
         <Link className="details-link" to={`/projects/${project.id}`}>
-          Details →
+        View Project →
         </Link>
       </div>
     </div>
